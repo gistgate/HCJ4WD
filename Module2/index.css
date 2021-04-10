@@ -1,14 +1,34 @@
+* { box-sizing: border-box;}
+    .all { width: 100%; margin:auto; background-color: thistle;}
 
- section {padding: 20px; width: 20%}
+    h1 {text-align: center; color: red; font-size: 175%;}
 
-      .sec1{
-        background-color: purple;
-      }
+    .box1{ background-color: seagreen; width: 32%;}
+    .box2{ background-color: rgb(250, 133, 0); width: 32%;}
+    .box3{ background-color: purple; width: 32%;}
+    .title1{ background-color: red;}
+    .title2{background-color: salmon;}
+    .title3{background-color: seashell;}
 
-.sec2{
-        background-color: green;
-      }
-.sec3{
-        background-color: blue;
-      }
+    .title1, .title2, .title3 {font-weight: bold; font-size: 125%; width: fit-content; 
+        padding: 10px; 
+    border:1px solid black; float: right; margin-top:0; font-family: Arial, Helvetica, sans-serif;
+}
 
+.box1, .box2, .box3 { margin-left:1%; float: left; border:1px solid black;}
+
+.text1, .text2, .text3 {color: white; padding: 5px; clear:right; font-family: Arial, Helvetica, sans-serif;}
+    
+@media (max-width: 767px){
+
+    .box1, .box2, .box3 {width: 100%; margin-top: 10px;}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+   /* .all div { width:45%;}*/
+
+   .box1, .box2 {width: 49%;}
+ .box3 { float: right; width: 100%; margin-top:10px;}
+}
